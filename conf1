@@ -1,0 +1,23 @@
+3 4
+0 1
+0 2 3
+1 2 3
+/--da qui in avanti il programma non legge--/
+Per semplificare il codice ho usato una matrice di adiacenza statica per salvare i collegamenti tra bridges e lans.
+Ho utilizzato il formato:
+
+nbridges nlans
+lan0bridge0 lan1bridge0
+lan0bridge1 ...
+...
+
+Ho realizzato un programma basato su un architettura
+con indirizzamento a 64bit
+
+Facendo replace long int -> int si ottie a 32 bit.
+
+Formato messaggi inviati.
+source|dest hops|dest1 hops2
+
+Ho aggiunto dei messaggi al inizio del programma che stampano
+a video le porte che vengono impegnate e gli assegnamenti porte<->bridge
